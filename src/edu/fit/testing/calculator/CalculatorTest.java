@@ -35,5 +35,11 @@ public class CalculatorTest {
         Calculator c = new Calculator();
         assertThrows(ArithmeticException.class,
                      () -> c.divide(4, 0));
+          }
+    @Test
+    public void testMultiply_byZero_shouldBeZero() {
+        Calculator c = new Calculator();
+        assertEquals(0, c.multiply(0, 5));
     }
+    
 }
