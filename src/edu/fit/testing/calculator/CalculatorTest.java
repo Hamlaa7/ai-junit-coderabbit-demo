@@ -39,7 +39,7 @@ public class CalculatorTest {
     @Test
     public void testMultiply_byZero_shouldBeZero() {
         Calculator c = new Calculator();
-        assertEquals(0, c.multiply(0, 5));
+        assertEquals(0, c.multiply(0, 10));
     }
     
 }
